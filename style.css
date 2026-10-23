@@ -44,6 +44,7 @@ h1,h2,h3,.price,.brand-text,.foot-name{font-family:'Playfair Display',serif}
 .hero{position:relative;min-height:94vh;display:flex;align-items:center;overflow:hidden}
 .hero-bg{position:absolute;inset:0;background:url('assets/img/hero.jpg') center/cover no-repeat}
 .hero-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(100deg,rgba(15,27,20,.88) 0%,rgba(15,27,20,.58) 55%,rgba(15,27,20,.32) 100%)}
+.hero-slide{position:absolute;inset:0;background-position:center;background-size:cover;background-repeat:no-repeat;opacity:0;transition:opacity .9s ease}.hero-slide.on{opacity:1}
 .hero-content{position:relative;z-index:2;max-width:1180px;margin:0 auto;padding:120px 24px 80px;width:100%}
 .hero .eyebrow{color:var(--gold)}
 .hero h1{color:#fff;font-size:clamp(2.7rem,6.4vw,4.8rem);line-height:1.06;font-weight:800}

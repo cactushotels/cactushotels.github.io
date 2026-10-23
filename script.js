@@ -36,3 +36,14 @@ GLightbox({selector: '.glightbox', touchNavigation: true, loop: true});
 setTimeout(() => {
   document.querySelectorAll('.reveal:not(.in)').forEach(el => el.classList.add('in'));
 }, 1500);
+
+// Hero crossfade carousel
+const hslides = document.querySelectorAll('.hero-slide');
+if (hslides.length > 1) {
+  let hi = 0;
+  setInterval(() => {
+    hslides[hi].classList.remove('on');
+    hi = (hi + 1) % hslides.length;
+    hslides[hi].classList.add('on');
+  }, 5000);
+}
