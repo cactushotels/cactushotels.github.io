@@ -1,3 +1,4 @@
+document.documentElement.classList.add('js');
 // Nav solid on scroll
 const nav = document.getElementById('nav');
 const onScroll = () => nav.classList.toggle('solid', window.scrollY > 60);
@@ -30,3 +31,8 @@ new Swiper('.gswiper', {
 
 // Lightbox
 GLightbox({selector: '.glightbox', touchNavigation: true, loop: true});
+
+// Safety: reveal everything after 1.5s even if IntersectionObserver never fires
+setTimeout(() => {
+  document.querySelectorAll('.reveal:not(.in)').forEach(el => el.classList.add('in'));
+}, 1500);
