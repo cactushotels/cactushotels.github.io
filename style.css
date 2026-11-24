@@ -80,7 +80,11 @@ h1,h2,h3,.price,.brand-text,.foot-name{font-family:'Playfair Display',serif}
 .rate-card li{font-size:.88rem;color:#4c4a40;padding:7px 0 7px 26px;position:relative;border-bottom:1px dashed var(--line)}
 .rate-card li:last-child{border-bottom:none}
 .rate-card li::before{content:"✓";position:absolute;left:0;color:var(--gold);font-weight:700}
-.rate-card .btn{justify-content:center}
+.rate-card .btn{justify-content:center;padding:10px 18px;font-size:.85rem}
+.rate-card .btn-view{background:rgba(31,59,44,.08);color:var(--green)}
+.rate-card .btn-view:hover{background:rgba(31,59,44,.16);transform:translateY(-1px)}
+.rate-card.featured .btn-view{background:rgba(247,244,235,.14);color:var(--cream)}
+.rate-card.featured .btn-view:hover{background:rgba(247,244,235,.24)}
 .rate-card.featured{background:var(--green);border-color:var(--green)}
 .rate-card.featured h3{color:#fff}
 .rate-card.featured .price{color:var(--gold)}
