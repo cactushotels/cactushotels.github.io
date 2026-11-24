@@ -136,6 +136,10 @@ h1,h2,h3,.price,.brand-text,.foot-name{font-family:'Playfair Display',serif}
 .foot-logo{height:56px;margin-bottom:14px}
 .foot-name{color:#fff;font-size:1.5rem;font-weight:700}
 .foot-tag{color:var(--gold);font-size:.9rem;margin-top:2px}
+.foot-social{display:flex;gap:10px;margin-top:20px}
+.foot-social a{display:inline-flex;align-items:center;justify-content:center;width:40px;height:40px;border:1px solid rgba(247,244,235,.25);border-radius:50%;color:rgba(247,244,235,.85);transition:all .25s ease}
+.foot-social a:hover{background:var(--gold);border-color:var(--gold);color:#14251B;transform:translateY(-2px)}
+.foot-social svg{width:18px;height:18px;fill:currentColor}
 .foot-h{color:#fff;font-weight:600;margin-bottom:12px;font-size:.95rem}
 .footer a:hover{color:var(--gold)}
 .foot-copy{text-align:center;border-top:1px solid rgba(255,255,255,.08);padding:20px 0;font-size:.8rem;color:rgba(247,244,235,.5)}
